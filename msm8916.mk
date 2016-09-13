@@ -71,13 +71,13 @@ PRODUCT_PACKAGES += \
     charger_res_images
 
 # Connectivity Engine support
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     libcnefeatureconfig
 
-ifeq ($(BOARD_USES_QCNE),true)
-PRODUCT_PROPERTY_OVERRIDES +=
-    persist.cne.feature=4
-endif
+#ifeq ($(BOARD_USES_QCNE),true)
+#PRODUCT_PROPERTY_OVERRIDES +=
+#    persist.cne.feature=4
+#endif
 
 # Display
 PRODUCT_PACKAGES += \
