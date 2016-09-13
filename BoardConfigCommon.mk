@@ -98,7 +98,7 @@ BOARD_USES_CYANOGEN_HARDWARE := true
 BOARD_HARDWARE_CLASS += hardware/cyanogen/cmhw
 
 # Crypto
-TARGET_HW_DISK_ENCRYPTION := true
+#TARGET_HW_DISK_ENCRYPTION := true
 
 # Dex
 ifeq ($(HOST_OS),linux)
@@ -131,7 +131,7 @@ TARGET_PLATFORM_DEVICE_BASE := /devices/soc.0/
 TARGET_KEYMASTER_WAIT_FOR_QSEE := true
 
 # Malloc
-MALLOC_IMPL := dlmalloc
+#MALLOC_IMPL := dlmalloc
 
 # Power
 TARGET_POWERHAL_VARIANT := qcom
@@ -154,9 +154,9 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(VENDOR_PATH)
 TARGET_RIL_VARIANT := caf
 
 # SELinux
-include device/qcom/sepolicy/sepolicy.mk
+#include device/qcom/sepolicy/sepolicy.mk
 
-BOARD_SEPOLICY_DIRS += \
+#BOARD_SEPOLICY_DIRS += \
     $(VENDOR_PATH)/sepolicy
 
 # Video
