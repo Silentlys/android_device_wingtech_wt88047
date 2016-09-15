@@ -155,9 +155,9 @@ TARGET_RIL_VARIANT := caf
 BOARD_GLOBAL_CFLAGS += -DUSE_RIL_VERSION_11
 
 # SELinux
-#include device/qcom/sepolicy/sepolicy.mk
+include device/qcom/sepolicy/sepolicy.mk
 
-#BOARD_SEPOLICY_DIRS += \
+BOARD_SEPOLICY_DIRS += \
     $(VENDOR_PATH)/sepolicy
 
 # Video
